@@ -1,0 +1,9 @@
+# Ignore files and directories that are not needed in the Docker build context
+.git
+.idea
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore the Titanic model file
+model/titanic.pkl
