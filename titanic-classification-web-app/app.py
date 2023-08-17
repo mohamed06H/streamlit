@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -37,7 +39,8 @@ st.subheader('User Input features')
 st.write(input_df)
 
 # Load saved model
-model = pickle.load(open('model/titanic.pkl', 'rb'))
+pickle_file = open('./model/titanic.pkl')
+model = pickle.load(pickle_file, 'rb'))
 
 # Make prediction
 prediction = model.predict(input_df)
