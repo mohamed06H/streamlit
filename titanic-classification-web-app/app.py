@@ -52,7 +52,7 @@ prediction_proba = model.predict_proba(input_df)
 
 # Predictions 
 st.subheader('Prediction')
-outcome = np.array(['Survived', 'Did not survived !'])
+outcome = np.array(['Did not survived !', 'Survived'])
 st.write(outcome[prediction])
 
 st.subheader('Prediction Probability')
