@@ -39,8 +39,8 @@ st.subheader('User Input features')
 st.write(input_df)
 
 # Load saved model
-pickle_file = open('./model/titanic.pkl')
-model = pickle.load(pickle_file, 'rb')
+pickle_file = open(os.getcwd().join('model/titanic.pkl'), 'rb')
+model = pickle.load(file=pickle_file)
 
 # Make prediction
 prediction = model.predict(input_df)
