@@ -40,7 +40,7 @@ st.write(input_df)
 
 # Load saved model
 pickle_file = open('./model/titanic.pkl')
-model = pickle.load(pickle_file, 'rb'))
+model = pickle.load(pickle_file, 'rb')
 
 # Make prediction
 prediction = model.predict(input_df)
